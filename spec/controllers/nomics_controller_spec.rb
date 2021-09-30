@@ -18,6 +18,26 @@ RSpec.describe NomicsController do
       end
     end
 
+    context "when given a ticker string" do
+      let(:params) {{ tickers: "BTC" }}
+
+      it { is_expected.to have_http_status :unprocessable_entity }
+
+      it "is expected to be json" do
+        expect(subject.content_type).to eq("application/json; charset=utf-8")
+      end
+    end
+
+    context "when given an invalid ticket" do
+      let(:params) {{ tickers: ["Sausage"] }}
+
+      it { is_expected.to have_http_status :success }
+
+      it "is expected to be json" do
+        expect(subject.content_type).to eq("application/json; charset=utf-8")
+      end
+    end
+
     context "when given ticker attributes" do
       let(:params) do
         {

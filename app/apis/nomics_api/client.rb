@@ -31,6 +31,8 @@ module NomicsApi
     def request(endpoint:, params: {})
       response = client.public_send(:get, API_ENDPOINT + endpoint, params)
       Oj.load(response.body)
+    rescue Oj::ParseError
+      raise ArgumentError.new "Too many requests"
     end
   end
 end

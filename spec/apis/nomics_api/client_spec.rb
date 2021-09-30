@@ -41,5 +41,17 @@ RSpec.describe NomicsApi::Client do
         expect(ticker_info.length).to equal(1)
       end
     end
+
+    context "when raised a 429 (too many requests)" do
+      let(:ticker_info) do
+        subject.get_tickers(
+          tickers:["BTC"]
+        )
+      end
+
+      it "returns all ticker information" do
+        expect { ticker_info }.to raise_error(ArgumentError)
+      end
+    end
   end
 end
