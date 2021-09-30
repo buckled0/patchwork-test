@@ -14,9 +14,30 @@ class NomicsController < ApplicationController
     render json: { tickers: tickers_fields }
   end
 
+  def get_exchange
+    tickers = client.get_tickers(
+      tickers: [params["currency_from"],
+      params["currency_to"]]
+    )
+
+    from = ticker(tickers.select {|ticker| ticker["id"] == params["currency_from"] }.first)
+    to = ticker(tickers.select {|ticker| ticker["id"] == params["currency_to"] }.first)
+
+    exchange_price = from.price.to_f / to.price.to_f
+
+    render json: {
+      "#{from.id}": "1",
+      "#{to.id}": "#{exchange_price}"
+    }
+  end
+
   private
 
   def client
     @client ||= NomicsApi::Client.new("35d3ca7c09f9794487f098683164e5ff5e8a574a")
+  end
+
+  def ticker(ticker)
+    OpenStruct.new(ticker)
   end
 end
