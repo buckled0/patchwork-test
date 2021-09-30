@@ -1,6 +1,9 @@
 class NomicsController < ApplicationController
   def get_ticker
-    tickers_fields = client.get_tickers(params["tickers"])
+    tickers_fields = client.get_tickers(
+      tickers: params["tickers"],
+      convert: params["convert"]
+    )
 
     tickers_fields.map do |ticker|
       ticker.select! do |k, v|

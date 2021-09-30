@@ -8,9 +8,13 @@ module NomicsApi
       @api_token = api_token
     end
 
-    def get_tickers(ids)
+    def get_tickers(tickers: "", convert: "")
       request(
-        endpoint: "/currencies/ticker?ids=#{ids.join(",")}"
+        endpoint: "/currencies/ticker",
+        params: {
+          ids: tickers.join(","),
+          convert: convert
+        }
       )
     end
 
@@ -20,12 +24,12 @@ module NomicsApi
       @_client ||= Faraday.new do |client|
         client.request :url_encoded
         client.adapter Faraday.default_adapter
-        client.authorization :Bearer, api_token
+        client.request :authorization, 'Bearer', @api_token
       end
     end
 
     def request(endpoint:, params: {})
-      response = client.public_send(:get, API_ENDPOINT + endpoint)
+      response = client.public_send(:get, API_ENDPOINT + endpoint, params)
       Oj.load(response.body)
     end
   end

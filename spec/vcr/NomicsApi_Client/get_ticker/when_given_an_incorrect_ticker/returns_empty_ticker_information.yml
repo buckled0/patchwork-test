@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.nomics.com/v1/currencies/ticker?ids=Sausage
+    uri: https://api.nomics.com/v1/currencies/ticker?convert=&ids=Sausage
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Authorization:
-      - Bearer 35d3ca7c09f9794487f098683164e5ff5e8a574a
       User-Agent:
       - Faraday v1.8.0
+      Authorization:
+      - Bearer 35d3ca7c09f9794487f098683164e5ff5e8a574a
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,7 +33,7 @@ http_interactions:
       X-Pagination-Total-Items:
       - '0'
       Date:
-      - Thu, 30 Sep 2021 12:17:08 GMT
+      - Thu, 30 Sep 2021 14:39:01 GMT
       Content-Length:
       - '3'
       Via:
@@ -41,5 +41,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]\n"
-  recorded_at: Thu, 30 Sep 2021 12:17:08 GMT
+  recorded_at: Thu, 30 Sep 2021 14:39:01 GMT
 recorded_with: VCR 6.0.0
