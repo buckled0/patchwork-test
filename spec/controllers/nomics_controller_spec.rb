@@ -36,7 +36,21 @@ RSpec.describe NomicsController do
     end
   end
 
+  describe "GET exchange" do
+    before do
+      allow(client.get_tickers).to receive(ids: ["BTC", "ETH"]) do
+        [double(id: "BTC", price: 100), double(id: "ETH", price: 50)]
+      end
+    end
+
+    fit { is_expected.to have_http_status :success }
+  end
+
   def response_body
     JSON.parse(subject.body)
+  end
+
+  def client
+    NomicsApi::Client.new("35d3ca7c09f9794487f098683164e5ff5e8a574a")
   end
 end

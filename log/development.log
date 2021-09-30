@@ -111,3 +111,266 @@ Processing by NomicsController#get_ticker as */*
 Completed 200 OK in 72918ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 18497)
 
 
+Started GET "/nomics/exchage?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:20:22 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/nomics/exchage"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/nomics/exchage?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:20:44 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/nomics/exchage"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/nomics/exchage?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:21:11 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/nomics/exchage"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from <main> at /Users/dan/dev/patchwork-test/bin/rake:9)
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:21:43 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 500 Internal Server Error in 370ms (ActiveRecord: 0.0ms | Allocations: 3001)
+
+
+  
+NoMethodError (undefined method `/' for "43398.38559364":String):
+  
+app/controllers/nomics_controller.rb:22:in `get_exchange'
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:22:02 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 1785ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1424)
+
+
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 16:23:28 +0100
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 200 OK in 376ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1262)
+
+
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 16:23:57 +0100
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 200 OK in 388ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1265)
+
+
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 16:24:17 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 200 OK in 634407ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 47349)
+
+
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 16:35:01 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 500 Internal Server Error in 442ms (ActiveRecord: 0.0ms | Allocations: 61336)
+
+
+  
+NameError (undefined local variable or method `ticker' for #<NomicsController:0x00007fcc0ae25f80>
+Did you mean?  tickers
+               ticket):
+  
+app/controllers/nomics_controller.rb:22:in `block in get_exchange'
+app/controllers/nomics_controller.rb:22:in `select'
+app/controllers/nomics_controller.rb:22:in `get_exchange'
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 16:35:25 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 500 Internal Server Error in 1309ms (ActiveRecord: 0.0ms | Allocations: 2638)
+
+
+  
+NoMethodError (undefined method `/' for #<Array:0x00007fcc0ad29668>):
+  
+app/controllers/nomics_controller.rb:25:in `get_exchange'
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 16:35:39 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 16:36:36 +0100
+Completed 500 Internal Server Error in 64285ms (ActiveRecord: 0.0ms | Allocations: 55594)
+
+
+  
+NoMethodError (undefined method `/' for #<Array:0x00007fcc0c0c9588>):
+  
+app/controllers/nomics_controller.rb:25:in `get_exchange'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 500 Internal Server Error in 676ms (ActiveRecord: 0.0ms | Allocations: 2590)
+
+
+  
+NoMethodError (undefined method `/' for "2997.92848962":String):
+  
+app/controllers/nomics_controller.rb:25:in `get_exchange'
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 16:37:06 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 200 OK in 846ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1753)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:37:20 +0100
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 362ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1268)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:41:18 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 364ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1403)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:41:51 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 339ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1404)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:41:58 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 333ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1410)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:45:45 +0100
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 378ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1516)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:45:48 +0100
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 366ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1322)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:56:36 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 395ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1491)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:56:54 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 428ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1462)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 16:57:29 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 139035ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 17217)
+
+
+Started GET "/nomics/exchange?currency_from=BTC&currency_to=ETH" for ::1 at 2021-09-30 17:00:04 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"BTC", "currency_to"=>"ETH"}
+Completed 200 OK in 424ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1466)
+
+
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 17:02:16 +0100
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 200 OK in 414ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1333)
+
+
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 17:02:56 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 200 OK in 408ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1473)
+
+
+Started GET "/nomics/exchange?currency_from=ETH&currency_to=BTC" for ::1 at 2021-09-30 17:03:07 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by NomicsController#get_exchange as */*
+  Parameters: {"currency_from"=>"ETH", "currency_to"=>"BTC"}
+Completed 200 OK in 358ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1469)
+
+
