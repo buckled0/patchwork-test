@@ -15,6 +15,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry', '~> 0.14.1'
   gem 'rspec', '~> 3.10'
+  gem 'webmock', '~> 3.14'
+  gem 'vcr', '~> 6.0'
 end
 
 group :development do

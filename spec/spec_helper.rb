@@ -4,6 +4,15 @@ ENV["RAILS_ENV"] ||= "test"
 require File.expand_path("../config/environment", __dir__)
 
 require "rspec/rails"
+require "webmock/rspec"
+
+require "vcr"
+VCR.configure do |c|
+  c.cassette_library_dir = "spec/vcr"
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+  vcr_mode = :once
+end
 
 RSpec.configure do |config|
   config.mock_with :rspec
