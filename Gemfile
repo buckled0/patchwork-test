@@ -7,7 +7,6 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'oj', '~> 3.13', '>= 3.13.8'
-gem 'figaro', '~> 1.2'
 gem 'faraday', '~> 1.8'
 gem 'sqlite3', '~> 1.4', '>= 1.4.2'
 
