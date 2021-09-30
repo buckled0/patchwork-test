@@ -8,7 +8,7 @@ First way to start is to run the app via docker using the normal `docker-compose
 
 ### Locally
 
-This is running on ruby 2.7.2 and will start with the standard `rails s` command
+This is running on ruby 2.7.2 and will start with `rails s` command
 
 ## Endpoints
 
