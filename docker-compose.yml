@@ -3,8 +3,6 @@ services:
   web:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
-    environment:
-      NOMAD_API_KEY: 35d3ca7c09f9794487f098683164e5ff5e8a574a
     volumes:
       - .:/myapp
     ports:
