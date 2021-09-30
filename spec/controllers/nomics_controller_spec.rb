@@ -36,14 +36,14 @@ RSpec.describe NomicsController do
     end
   end
 
-  describe "GET exchange" do
+  describe "GET exchange", vcr: true do
     before do
-      allow(client.get_tickers).to receive(ids: ["BTC", "ETH"]) do
-        [double(id: "BTC", price: 100), double(id: "ETH", price: 50)]
-      end
+      get(:get_exchange, params: params)
     end
 
-    fit { is_expected.to have_http_status :success }
+    let(:params) {{ currency_from: "ETH", currency_to: "BTC" }}
+
+    it { is_expected.to have_http_status :success }
   end
 
   def response_body
