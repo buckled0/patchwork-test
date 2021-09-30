@@ -6,12 +6,12 @@ RSpec.describe NomicsApi::Client do
   describe "get_ticker", vcr: true do
     context "when given a ticker" do
       it "returns all ticker information" do
-        expect(subject.get_tickers(["BTC"])).to be_an_instance_of(Array)
+        expect(subject.get_tickers(tickers: ["BTC"])).to be_an_instance_of(Array)
       end
     end
 
     context "when given multiple tickers" do
-      let(:ticker_info) { subject.get_tickers(["BTC", "XRP", "ETH"]) }
+      let(:ticker_info) { subject.get_tickers(tickers: ["BTC", "XRP", "ETH"]) }
 
       it "returns all ticker information" do
         expect(ticker_info).to be_an_instance_of(Array)
@@ -20,11 +20,25 @@ RSpec.describe NomicsApi::Client do
     end
 
     context "when given an incorrect ticker" do
-      let(:ticker_info) { subject.get_tickers(["Sausage"]) }
+      let(:ticker_info) { subject.get_tickers(tickers: ["Sausage"]) }
 
       it "returns empty ticker information" do
         expect(ticker_info).to be_an_instance_of(Array)
         expect(ticker_info).to be_empty
+      end
+    end
+
+    context "when given a conversion" do
+      let(:ticker_info) do
+        subject.get_tickers(
+          tickers:["BTC"],
+          convert: "GBP"
+        )
+      end
+
+      it "returns all ticker information" do
+        expect(ticker_info).to be_an_instance_of(Array)
+        expect(ticker_info.length).to equal(1)
       end
     end
   end
