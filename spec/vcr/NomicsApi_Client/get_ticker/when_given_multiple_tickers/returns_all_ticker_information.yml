@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nomics.com/v1/currencies/ticker?ids=BTC,XRP,ETH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 35d3ca7c09f9794487f098683164e5ff5e8a574a
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=10, stale-while-revalidate=20, stale-if-error=20
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      X-Pagination-Total-Items:
+      - '3'
+      Date:
+      - Thu, 30 Sep 2021 12:29:34 GMT
+      Content-Length:
+      - '1505'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"BTC","currency":"BTC","symbol":"BTC","name":"Bitcoin","logo_url":"https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg","status":"active","price":"43282.93240037","price_date":"2021-09-30T00:00:00Z","price_timestamp":"2021-09-30T12:29:00Z","circulating_supply":"18830375","max_supply":"21000000","market_cap":"815033848199","market_cap_dominance":"0.3700","num_exchanges":"392","num_pairs":"65285","num_pairs_unmapped":"5163","first_candle":"2011-08-18T00:00:00Z","first_trade":"2011-08-18T00:00:00Z","first_order_book":"2017-01-06T00:00:00Z","rank":"1","rank_delta":"0","high":"63657.52779947","high_timestamp":"2021-04-13T00:00:00Z","1d":{"volume":"38141895276.46","price_change":"1146.30344234","price_change_pct":"0.0272","volume_change":"-2601319797.46","volume_change_pct":"-0.0638","market_cap_change":"21621139817.66","market_cap_change_pct":"0.0273"},"7d":{"volume":"284121583546.73","price_change":"-1664.31639461","price_change_pct":"-0.0370","volume_change":"-69356244011.06","volume_change_pct":"-0.1962","market_cap_change":"-31048668393.17","market_cap_change_pct":"-0.0367"},"30d":{"volume":"1500306562018.69","price_change":"-3901.31181255","price_change_pct":"-0.0827","volume_change":"59659594905.89","volume_change_pct":"0.0414","market_cap_change":"-72149649431.78","market_cap_change_pct":"-0.0813"},"365d":{"volume":"20819363558639.31","price_change":"32604.51429404","price_change_pct":"3.0533","volume_change":"10168705104794.91","volume_change_pct":"0.9547","market_cap_change":"617439865638.21","market_cap_change_pct":"3.1248"},"ytd":{"volume":"17973842372209.92","price_change":"10404.20789235","price_change_pct":"0.3164","volume_change":"9912964338103.42","volume_change_pct":"1.2298","market_cap_change":"203918869855.34","market_cap_change_pct":"0.3337"}},{"id":"ETH","currency":"ETH","symbol":"ETH","name":"Ethereum","logo_url":"https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg","status":"active","price":"2978.48641308","price_date":"2021-09-30T00:00:00Z","price_timestamp":"2021-09-30T12:29:00Z","circulating_supply":"117735679","market_cap":"350674119488","market_cap_dominance":"0.1592","num_exchanges":"417","num_pairs":"51057","num_pairs_unmapped":"41274","first_candle":"2015-08-07T00:00:00Z","first_trade":"2015-08-07T00:00:00Z","first_order_book":"2018-08-29T00:00:00Z","rank":"2","rank_delta":"0","high":"4180.53410035","high_timestamp":"2021-05-11T00:00:00Z","1d":{"volume":"29059357186.44","price_change":"65.07200952","price_change_pct":"0.0223","volume_change":"-558145622.94","volume_change_pct":"-0.0188","market_cap_change":"7700859554.92","market_cap_change_pct":"0.0225"},"7d":{"volume":"231150811173.67","price_change":"-176.58683167","price_change_pct":"-0.0560","volume_change":"-33528531336.02","volume_change_pct":"-0.1267","market_cap_change":"-20492890309.98","market_cap_change_pct":"-0.0552"},"30d":{"volume":"1188628630058.60","price_change":"-455.34205698","price_change_pct":"-0.1326","volume_change":"-14730159973.48","volume_change_pct":"-0.0122","market_cap_change":"-52220213643.86","market_cap_change_pct":"-0.1296"},"365d":{"volume":"14783334039836.91","price_change":"2625.82156478","price_change_pct":"7.4457","volume_change":"10076121404101.39","volume_change_pct":"2.1406","market_cap_change":"310888509067.10","market_cap_change_pct":"7.8141"},"ytd":{"volume":"13392381348654.00","price_change":"2004.86931921","price_change_pct":"2.0592","volume_change":"9431635843725.61","volume_change_pct":"2.3813","market_cap_change":"239618537582.85","market_cap_change_pct":"2.1576"}},{"id":"XRP","currency":"XRP","symbol":"XRP","name":"XRP","logo_url":"https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/XRP.svg","status":"active","price":"0.94484379","price_date":"2021-09-30T00:00:00Z","price_timestamp":"2021-09-30T12:29:00Z","circulating_supply":"46750439262","max_supply":"100000000000","market_cap":"44171862332","market_cap_dominance":"0.0201","num_exchanges":"260","num_pairs":"1710","num_pairs_unmapped":"56","first_candle":"2013-05-09T00:00:00Z","first_trade":"2013-05-09T00:00:00Z","first_order_book":"2018-08-29T00:00:00Z","rank":"7","rank_delta":"0","high":"2.75731495","high_timestamp":"2018-01-07T00:00:00Z","1d":{"volume":"4385878690.18","price_change":"0.020099135","price_change_pct":"0.0217","volume_change":"1193364016.58","volume_change_pct":"0.3738","market_cap_change":"939643386.78","market_cap_change_pct":"0.0217"},"7d":{"volume":"24478477755.14","price_change":"-0.057809057","price_change_pct":"-0.0577","volume_change":"-7189162645.56","volume_change_pct":"-0.2270","market_cap_change":"-2669713109.27","market_cap_change_pct":"-0.0570"},"30d":{"volume":"159003767872.83","price_change":"-0.24258333","price_change_pct":"-0.2043","volume_change":"-54046449057.17","volume_change_pct":"-0.2537","market_cap_change":"-11059653690.57","market_cap_change_pct":"-0.2002"},"365d":{"volume":"3043084782979.02","price_change":"0.69670477","price_change_pct":"2.8077","volume_change":"2350203985155.38","volume_change_pct":"3.3919","market_cap_change":"32971818894.24","market_cap_change_pct":"2.9439"},"ytd":{"volume":"2446299915192.34","price_change":"0.72047485","price_change_pct":"3.2111","volume_change":"1505302256041.88","volume_change_pct":"1.5997","market_cap_change":"33979725865.45","market_cap_change_pct":"3.3339"}}]
+
+        '
+  recorded_at: Thu, 30 Sep 2021 12:29:34 GMT
+recorded_with: VCR 6.0.0
