@@ -41,6 +41,12 @@ class NomicsController < ApplicationController
   end
 
   def validate_tickers
+    unless params.has_key?(:tickers)
+      render json: {
+        msg: "Param tickers must be present"
+      }, status: 422
+    end
+
     if params["tickers"].is_a?(String)
       render json: {
         msg: "Param tickers must be an array (tickers[]=)"

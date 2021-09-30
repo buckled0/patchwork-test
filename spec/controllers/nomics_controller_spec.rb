@@ -54,6 +54,16 @@ RSpec.describe NomicsController do
         )
       end
     end
+
+    context "when given no tickers was given" do
+      let(:params) do
+        {
+          fields: ["circulating_supply", "max_supply", "name", "symbol", "price"]
+        }
+      end
+
+      it { is_expected.to have_http_status :unprocessable_entity }
+    end
   end
 
   describe "GET exchange", vcr: true do
