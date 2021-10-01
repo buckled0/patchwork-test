@@ -14,16 +14,16 @@ This is running on ruby 2.7.2 and will start with `rails s` command
 
 `/nomics/ticker`
 
-| Parameter Name  | Parameter Type |
-| ------------- | ------------- |
-| tickers  |  List of tickers e.g BTC,ETH,XRP  |
-| fields  |  List of fields only to return e.g circulating_supply, max_supply, name, symbol, price  |
-| convert  |  String of currency you want to specific fiat to e.g USD  |
+| Parameter Name | Param Type | Parameter Description |
+| ------------- | ------------- | ------------- |
+| tickers[] | ARRAY |  List of tickers e.g BTC,ETH,XRP  |
+| fields  | STRING | List of fields only to return e.g circulating_supply, max_supply, name, symbol, price  |
+| convert  | STRING | String of currency you want to specific fiat to e.g USD  |
 
 
 `/nomics/exchange`
 
-| Parameter Name  | Parameter Type |
-| ------------- | ------------- |
-| current_from  |  First currency you want exchange rate of  |
-| current_to  |  Second currency you want exchange rate of  |
+| Parameter Name | Parameter Type | Parameter Description |
+| ------------- | ------------- | ------------- |
+| current_from | STRING |  First currency you want exchange rate of  |
+| current_to  | STRING | Second currency you want exchange rate of  |
