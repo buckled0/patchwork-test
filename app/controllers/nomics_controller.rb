@@ -21,6 +21,8 @@ class NomicsController < ApplicationController
       params["currency_to"]]
     )
 
+    return exchange_error if tickers.length == 1
+
     render json: ExchangeService.call(
       tickers: tickers,
       from: params["currency_from"],
@@ -52,5 +54,11 @@ class NomicsController < ApplicationController
         msg: "Param tickers must be an array (tickers[]=)"
       }, status: 422
     end
+  end
+
+  def exchange_error
+    render json: {
+      msg: "Exchange couldn't be made"
+    }, status: 422
   end
 end

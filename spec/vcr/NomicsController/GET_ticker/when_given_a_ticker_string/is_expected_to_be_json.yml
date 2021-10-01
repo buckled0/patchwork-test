@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nomics.com/v1/currencies/ticker?convert&ids=BTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Authorization:
+      - Bearer 35d3ca7c09f9794487f098683164e5ff5e8a574a
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 429
+      message: Too Many Requests
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/plain; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Fri, 01 Oct 2021 08:54:16 GMT
+      Content-Length:
+      - '128'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        Tm9taWNzLmNvbeKAmXMgZnJlZSBwbGFuIGFsbG93cyBmb3IgMSByZXF1ZXN0IC8gc2Vjb25kLiBQbGVhc2UgY29udGFjdCBzYWxlc0Bub21pY3MuY29tIGlmIHlvdeKAmWQgbGlrZSBhbiB1cGdyYWRlZCByYXRlIGxpbWl0Lgo=
+  recorded_at: Fri, 01 Oct 2021 08:54:16 GMT
+recorded_with: VCR 6.0.0

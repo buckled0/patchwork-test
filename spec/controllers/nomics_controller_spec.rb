@@ -71,9 +71,17 @@ RSpec.describe NomicsController do
       get(:get_exchange, params: params)
     end
 
-    let(:params) {{ currency_from: "ETH", currency_to: "BTC" }}
+    context "successful conversion" do
+      let(:params) {{ currency_from: "ETH", currency_to: "BTC" }}
 
-    it { is_expected.to have_http_status :success }
+      it { is_expected.to have_http_status :success }
+    end
+
+    context "unsucessful conversion" do
+      let(:params) {{ currency_from: "ETH", currency_to: "Sausage" }}
+
+      it { is_expected.to have_http_status :unprocessable_entity }
+    end
   end
 
   def response_body
